@@ -1,3 +1,11 @@
+Participantes del proyecto.
+Pedro Tomas Pacheco Pérez
+Raumir Campuzano Contreras
+Anyelicetth Higuera Moreno
+
+
+
+
 🧠 API Gestión de Usuarios/Productos con Node.js y MongoDB
 Este proyecto implementa una interfaz web para el inicio de sesión y registro de usuarios, junto con una API desarrollada en Node.js para gestionar usuarios y productos/servicios en una base de datos MongoDB Atlas.
 
