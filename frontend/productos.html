@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Gestión de Productos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO CON NAVEGACIÓN -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Dashboard</div>
+      <ul class="nav-links">
+        <li><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main">
+
+    <!-- SECCIÓN DEL FORMULARIO -->
+    <section class="formulario-section">
+      <h1>Gestión de Productos</h1>
+      <form id="producto-form" class="producto-form">
+        <input type="hidden" id="producto-id" />
+        <input type="text" id="nombre" placeholder="Nombre del producto" required />
+        <input type="number" id="precio" placeholder="Precio" required />
+        <input type="text" id="descripcion" placeholder="Descripción" required />
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN DE LISTA DE PRODUCTOS -->
+    <section class="lista-productos-section">
+      <h2>Lista de Productos</h2>
+      <ul id="lista-productos" class="lista-productos"></ul>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/productoss.js"></script>
+  <script>
+    function cerrarSesion() {
+      localStorage.clear();
+      window.location.href = 'index.html';
+    }
+  </script>
+
+</body>
+</html>
+

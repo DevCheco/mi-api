@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Gestión de Usuarios</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO CON NAVEGACIÓN -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Dashboard</div>
+      <ul class="nav-links">
+        <li><a href="usuarios.html" class="active">Usuarios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main">
+    
+    <!-- SECCIÓN DEL FORMULARIO -->
+    <section class="formulario-section">
+      <h1>Gestión de Usuarios</h1>
+      <form id="usuario-form" class="usuario-form">
+        <input type="hidden" id="id" />
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="email" id="email" placeholder="Correo electrónico" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN DE LISTA DE USUARIOS -->
+    <section class="lista-usuarios-section">
+      <h2>Lista de Usuarios</h2>
+      <ul id="lista-usuarios" class="lista-usuarios"></ul>
+    </section>
+    
+  </main>
+
+  <!-- JS -->
+  <script src="js/usuarioss.js"></script>
+  <script>
+    function cerrarSesion() {
+      localStorage.clear();
+      window.location.href = 'index.html';
+    }
+
+    const usuario = localStorage.getItem('usuario');
+    if (!usuario) {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+</body>
+</html>
+
+
