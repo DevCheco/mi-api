@@ -1,6 +1,6 @@
-Participantes del proyecto.
-Pedro Tomas Pacheco Pérez
-Raumir Campuzano Contreras
+Participantes del proyecto. <br>
+Pedro Tomas Pacheco Pérez<br>
+Raumir Campuzano Contreras<br>
 Anyelicetth Higuera Moreno
 
 
