@@ -66,7 +66,7 @@ Git
 
 Puedes utilizar [Postman](https://www.postman.com/) para probar los distintos endpoints de la API localmente, en la siguiente URL base:
 
-http://localhost:3000/api/usaurios
+http://localhost:3000/api/usuarios
 http://localhost:3000/api/productos
 
 
