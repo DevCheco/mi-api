@@ -59,3 +59,14 @@ HTML/CSS (Frontend)
 JavaScript
 Visual Studio Code
 Git
+
+
+
+## 🧪 Testing con Postman – Ejemplos de Uso
+
+Puedes utilizar [Postman](https://www.postman.com/) para probar los distintos endpoints de la API localmente, en la siguiente URL base:
+
+http://localhost:3000/api/usaurios
+http://localhost:3000/api/productos
+
+
